@@ -1,0 +1,37 @@
+<mat-card appearance="outlined">
+  
+<div class="flex flex-row m-4 gap-4 ">
+  
+
+    <!--chiffres: gauche -->
+    <div class="grid grid-cols-3 gap-4">
+  
+      @for (nombre of listenombre; track nombre) {
+        <div>
+          <button mat-raised-button class="btn"> {{nombre}} </button>
+        </div>
+      
+      }
+   
+      <div class="col-span-3">
+        <button mat-raised-button class="w-full">=</button>
+      </div>
+    </div> <!-- 🔁 Fermeture -->
+  
+    <!-- chiffres: droite-->
+    <div class="grid grid-cols-1 gap-4 ml-4" >
+  
+      @for (operation of listeoperation; track operation) {
+        <div>
+          <button mat-raised-button>{{operation}}</button>
+          
+        </div>
+      }
+  
+    </div> 
+  
+  </div> 
+</mat-card>
+
+ 
+

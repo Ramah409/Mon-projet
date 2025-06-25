@@ -1,0 +1,27 @@
+<mat-card appearance="outlined">
+<form [formGroup]="formgroup" (ngSubmit)="onsubmit()">
+
+        <h1>Calculatrice</h1>
+    <br>
+    <input type="number" formControlName="nombre1">
+
+    <select formControlName="operateur">
+
+        @for (operateur of Listoperateur; track operateur) {
+
+         <option [value]="operateur.value">{{operateur.value}}</option>   
+
+        }
+        
+    </select>
+
+    <input type="number" formControlName="nombre2">
+    <button type="submit" mat-raised-button>Calculer</button>
+
+   
+  
+</form>
+  <p class="color">Resultat:{{resultat}}</p>
+
+</mat-card>
+

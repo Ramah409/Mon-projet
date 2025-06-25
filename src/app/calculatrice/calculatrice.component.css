@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    font-weight: bold;
+    border-radius: 50px;
+    height: 30px;
+  
+}
+P {
+    margin-top: 20px;
+    text-align: center;
+}
+mat-card {
+    background-color: rgb(214, 239, 219);
+   
+}
