@@ -5,5 +5,5 @@ import { CalculetteComponent } from './calculette/calculette.component';
 export const routes: Routes = [
 
     {path: 'calculatrice', component:CalculatriceComponent},
-    {path: 'calculette', component:CalculetteComponent}, 
+    {path: '', component:CalculetteComponent}, 
 ];
